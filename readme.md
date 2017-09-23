@@ -1,7 +1,7 @@
-# alpine-nodejs
-Nginx container based on apline (also includes curl). The reason for this build is  the official nginx container is just a tad to lean for my taste because it has very few resources for troubleshooting.
+# alpine-nginx
+Nginx container based on the offical [Apline Linux container](https://hub.docker.com/_/alpine/) (also includes curl). The reason for this build is  the official nginx container is just a tad to lean for my taste because it has very few resources for troubleshooting.
 
-The version number of this container matches the version of the official alpine container it is built on.
+The version number of this container matches the version of the official alpine container it is built on up to the first 2 digits. The last digit is the patch version relevant to this container build.
 
 # Usage
 Create a docker container and specify the location of your nginx config directory and html files.
@@ -20,3 +20,6 @@ You can get a bash session in the container with the follow command:
 ```bash
 docker exec -it <container_name> /bin/sh
 ```
+
+#Help
+On an issue on the github repo.
